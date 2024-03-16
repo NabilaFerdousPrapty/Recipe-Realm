@@ -1,4 +1,4 @@
-
+import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
 import PropTypes from "prop-types";
 const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
     return (<>
@@ -15,7 +15,7 @@ const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
       </tr>
     </thead>
   </table>
-            
+            <CurrentlyCooking></CurrentlyCooking>
         </div>
         <div>
            <h2>Total Time ={totalTime} </h2>
@@ -28,7 +28,9 @@ const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
 };
 
 CurrentlyCookingList.propTypes = {
-    currentlyCooking:PropTypes.number
+    currentlyCooking:PropTypes.number,
+    totalTime:PropTypes.number,
+    totalCalory:PropTypes.number
     
   };
 export default CurrentlyCookingList;
