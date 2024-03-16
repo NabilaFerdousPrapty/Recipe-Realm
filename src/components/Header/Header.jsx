@@ -81,17 +81,17 @@ const Header = () => {
       </div>
 
       <div style={{ backgroundImage: `url(${bgImage})` }} className='bg-cover rounded-xl'>
-        <div className='text-white py-12'>
-          <h1 className="text-5xl lexend-bold py-8 pt-20 ">
+        <div className='text-white lg:py-12'>
+          <h1 className="lg:text-5xl md:text-2xl text-xl lexend-bold py-8 pt-20 ">
             Discover an exceptional cooking <br /> class tailored for you!
           </h1>
-          <p className="text-xl lexend-normal py-4">
+          <p className="lg:text-xl text-sm lexend-normal py-4">
             Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
             Database and solve 500+ coding <br /> problems to become an exceptionally
             well world-class Programmer.
           </p>
-          <div className='py-10 pb-20'>
-          <button className="btn px-8 bg-[#0BE58A] lexend-semi-bold rounded-3xl text-[#150B2B mx-8">Explore Now</button>
+          <div className='lg:py-10 pb-20  flex-col '>
+          <button className="btn px-8 bg-[#0BE58A] lexend-semi-bold rounded-3xl text-[#150B2B lg:mx-8 my-5">Explore Now</button>
           <button className="btn bg-transparent text-white rounded-3xl lexend-semi-bold">Our Feedback</button>
           </div>
          
