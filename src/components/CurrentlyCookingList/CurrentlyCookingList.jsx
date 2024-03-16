@@ -17,7 +17,7 @@ const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
   </table>
             <CurrentlyCooking></CurrentlyCooking>
         </div>
-        <div>
+        <div className="flex justify-between items-center mt-6">
            <h2>Total Time ={totalTime} </h2>
            <h2>
            Total Calories ={totalCalory} 

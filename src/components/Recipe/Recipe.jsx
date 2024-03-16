@@ -4,7 +4,7 @@ import { VscFlame } from "react-icons/vsc";
 import { LuDot } from "react-icons/lu";
 
 
-const Recipe = ({ recipe, handleSetCooking,notify }) => {
+const Recipe = ({ recipe, handleSetCooking }) => {
   const {
     recipe_name,
     recipe_image,
@@ -54,7 +54,7 @@ const Recipe = ({ recipe, handleSetCooking,notify }) => {
             <button
               onClick={() => {
                 handleSetCooking(recipe,preparing_time,calories);
-                notify()
+               
                 
               }}
               className=" bg-[#0BE58A] text-[#150B2B] md:px-6 md:py-2 rounded-3xl px-3 "
@@ -70,7 +70,6 @@ const Recipe = ({ recipe, handleSetCooking,notify }) => {
 };
 Recipe.propTypes = {
   recipe: PropTypes.object.isRequired,
-  handleSetCooking: PropTypes.func,
-  notify:PropTypes.func
+  handleSetCooking: PropTypes.func
 };
 export default Recipe;
