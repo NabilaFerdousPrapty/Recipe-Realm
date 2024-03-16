@@ -1,8 +1,8 @@
 import PropTypes from "prop-types";
 import Cooking from "../Cooking/Cooking";
 import CurrentlyCookingList from "../CurrentlyCookingList/CurrentlyCookingList";
-let currentlyCooking=0;
-const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking}) => {
+
+const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,currentlyCookingList}) => {
  
   
   
@@ -39,7 +39,7 @@ const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking}
       {}
      </div>
      <div className=" mt-8 border-b-2 border-[#28282826] mx-6">
-      <CurrentlyCookingList currentlyCooking={currentlyCooking} totalTime={totalTime} totalCalory={totalCalory} ></CurrentlyCookingList>
+      <CurrentlyCookingList handleCurrentlyCooking={handleCurrentlyCooking}  totalTime={totalTime} totalCalory={totalCalory} currentlyCookingList={currentlyCookingList} ></CurrentlyCookingList>
 
      </div>
     </div>
@@ -49,7 +49,8 @@ CookingList.propTypes = {
   cookingList: PropTypes.array,
   totalTime:PropTypes.number,
   totalCalory:PropTypes.number,
-  handleCurrentlyCooking:PropTypes.func
+  handleCurrentlyCooking:PropTypes.func,
+  currentlyCookingList:PropTypes.array
 };
 
 export default CookingList;

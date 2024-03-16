@@ -13,7 +13,7 @@ const Cooking = ({ cooking, index ,handleCurrentlyCooking}) => {
                 <td className="text-xs ">{preparing_time}</td>
                 <td className="text-xs ">{calories}</td>
                 <td className="">
-                  <button onClick={handleCurrentlyCooking} className="text-[#150B2B] bg-[#0BE58A] px-3 py-1 rounded-2xl">
+                  <button onClick={()=>handleCurrentlyCooking(index)} className="text-[#150B2B] bg-[#0BE58A] px-3 py-1 rounded-2xl">
                     Preparing
                   </button>
                 </td>

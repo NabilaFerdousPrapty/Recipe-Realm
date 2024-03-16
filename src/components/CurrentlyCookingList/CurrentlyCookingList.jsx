@@ -1,9 +1,9 @@
-import CurrentlyCooking from "../CurrentlyCooking/CurrentlyCooking";
+
 import PropTypes from "prop-types";
-const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
+const CurrentlyCookingList = ({totalTime,totalCalory,currentlyCookingList}) => {
     return (<>
         <div>
-            <h2 className="text-3xl lexend-semi-bold border-b-2 border-[#28282826]">Currently cooking:{currentlyCooking}</h2>
+            <h2 className="text-3xl lexend-semi-bold border-b-2 border-[#28282826]">Currently cooking:{currentlyCookingList.length}</h2>
             <table className="table text-xs">
     <thead>
       <tr>
@@ -14,12 +14,24 @@ const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
         
       </tr>
     </thead>
+    <tbody>
+            {currentlyCookingList.map((item, index) => (
+              <tr key={index}>
+                <td>{index + 1}</td>
+                <td>{item.recipe_name}</td> 
+                <td>{item.preparing_time}</td> 
+                <td>{item.calories}</td> 
+              </tr>
+            ))}
+          </tbody>
   </table>
-            <CurrentlyCooking></CurrentlyCooking>
+ 
+            
         </div>
         <div className="flex justify-between items-center mt-6">
            <h2>Total Time ={totalTime} </h2>
            <h2>
+           
            Total Calories ={totalCalory} 
            </h2>
         </div>
@@ -30,7 +42,8 @@ const CurrentlyCookingList = ({currentlyCooking,totalTime,totalCalory}) => {
 CurrentlyCookingList.propTypes = {
     currentlyCooking:PropTypes.number,
     totalTime:PropTypes.number,
-    totalCalory:PropTypes.number
+    totalCalory:PropTypes.number,
+    currentlyCookingList:PropTypes.array
     
   };
 export default CurrentlyCookingList;
