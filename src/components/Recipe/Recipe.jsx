@@ -30,24 +30,24 @@ const Recipe = ({ recipe, handleSetCooking }) => {
 
           <ul className="text-[#878787]">
             {ingredients.map((ingredient, index) => (
-              <li className="md:flex items-center justify-start" key={index}>
+              <li className="flex items-center justify-start" key={index}>
                 <LuDot />
                 {ingredient}
               </li>
             ))}
           </ul>
 
-          <div className="text-[#878787] md:flex justify-between items-center">
-            <p className="md:flex items-center">
+          <div className="text-[#878787] flex justify-between items-center">
+            <p className="flex items-center">
               <CiClock2 />
               {preparing_time} minutes
             </p>
-            <p className="md:flex items-center">
+            <p className="flex items-center">
               <VscFlame />
               {calories}calories
             </p>
           </div>
-          <div className="card-actions">
+          <div className="card-actions py-2">
             <button
               onClick={() => {
                 handleSetCooking(recipe);

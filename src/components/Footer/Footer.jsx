@@ -2,7 +2,7 @@ import footerImg from "../../assets/image/logo.png";
 const Footer = () => {
   return (
     <>
-      <footer className="footer footer-center p-10 bg-[#0BE58A]  mx-0 text-black my-3 rounded-3xl">
+      <footer className="footer footer-center p-10 bg-[#0BE58A]  mx-0 text-[#150B2B] my-3 rounded-3xl">
         <aside>
           <img src={footerImg} alt="" className=" w-1/4 rounded-full" />
           <p className="font-bold">

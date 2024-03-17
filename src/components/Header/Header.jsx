@@ -43,7 +43,7 @@ const Header = () => {
               <input
               type="text"
               placeholder="Search" 
-              className="input input-bordered w-24 md:w-auto"
+              className="input input-bordered w-48 md:w-auto rounded-3xl"
             />
               </li>
             </ul>
@@ -72,7 +72,7 @@ const Header = () => {
             <input
               type="text"
               placeholder="Search" 
-              className="input input-bordered w-24 md:w-auto"
+              className="input input-bordered w-24 md:w-auto rounded-3xl"
             />
             <IoSearchOutline className='absolute left-[87%] top-[35%]'  />
           </div>
