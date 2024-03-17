@@ -13,7 +13,7 @@ function App() {
   const [currentlyCookingList, setCurrentlyCookingList] = useState([]);
   useEffect(() => {}, []);
 
-  const handleSetCooking = (recipe, time, calories) => {
+  const handleSetCooking = (recipe) => {
     console.log("Add to cooking");
     console.log(recipe);
 
@@ -24,8 +24,7 @@ function App() {
     if (recipeExists) {
       notify();
     } else {
-      setTotalTime(totalTime + time);
-      setTotalCalory(totalCalory + calories);
+     
       const cookingLists = [...cookingList, recipe];
       setCookingList(cookingLists);
     }
@@ -47,6 +46,11 @@ function App() {
    
   };
 
+  const countCaloriesTime=(time, calories)=>{
+    setTotalTime(totalTime + time);
+      setTotalCalory(totalCalory + calories);
+
+  }
   const notify = () => toast.warning("Recipe already exists in the list!");
 
   return (
@@ -73,6 +77,7 @@ function App() {
           totalCalory={totalCalory}
           handleCurrentlyCooking={handleCurrentlyCooking} 
           currentlyCookingList={currentlyCookingList}
+          countCaloriesTime={countCaloriesTime}
         />
       </div>
       <ToastContainer />

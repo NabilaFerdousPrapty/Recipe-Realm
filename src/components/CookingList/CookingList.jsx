@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import Cooking from "../Cooking/Cooking";
 import CurrentlyCookingList from "../CurrentlyCookingList/CurrentlyCookingList";
 
-const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,currentlyCookingList}) => {
+const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,currentlyCookingList,countCaloriesTime}) => {
  
   
   
@@ -33,6 +33,7 @@ const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,
           key={cooking.recipe_id}
           index={index}
           handleCurrentlyCooking={handleCurrentlyCooking}
+          countCaloriesTime={countCaloriesTime}
 
         ></Cooking>
       ))}
@@ -50,7 +51,8 @@ CookingList.propTypes = {
   totalTime:PropTypes.number,
   totalCalory:PropTypes.number,
   handleCurrentlyCooking:PropTypes.func,
-  currentlyCookingList:PropTypes.array
+  currentlyCookingList:PropTypes.array,
+  countCaloriesTime:PropTypes.func
 };
 
 export default CookingList;

@@ -53,7 +53,7 @@ const Recipe = ({ recipe, handleSetCooking }) => {
           <div className="card-actions">
             <button
               onClick={() => {
-                handleSetCooking(recipe,preparing_time,calories);
+                handleSetCooking(recipe);
                
                 
               }}

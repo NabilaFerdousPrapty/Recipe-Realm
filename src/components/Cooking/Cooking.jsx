@@ -1,5 +1,10 @@
 import PropTypes from "prop-types";
-const Cooking = ({ cooking, index ,handleCurrentlyCooking}) => {
+const Cooking = ({
+  cooking,
+  index,
+  handleCurrentlyCooking,
+  countCaloriesTime,
+}) => {
   const { recipe_name, preparing_time, calories } = cooking;
   return (
     <div>
@@ -13,7 +18,13 @@ const Cooking = ({ cooking, index ,handleCurrentlyCooking}) => {
                 <td className="text-xs ">{preparing_time}</td>
                 <td className="text-xs ">{calories}</td>
                 <td className="">
-                  <button onClick={()=>handleCurrentlyCooking(index)} className="text-[#150B2B] bg-[#0BE58A] px-3 py-1 rounded-2xl">
+                  <button
+                    onClick={() => {
+                      handleCurrentlyCooking(index);
+                      countCaloriesTime(preparing_time, calories);
+                    }}
+                    className="text-[#150B2B] bg-[#0BE58A] px-3 py-1 rounded-2xl"
+                  >
                     Preparing
                   </button>
                 </td>
@@ -28,7 +39,8 @@ const Cooking = ({ cooking, index ,handleCurrentlyCooking}) => {
 Cooking.propTypes = {
   cooking: PropTypes.object,
   index: PropTypes.number,
-  handleCurrentlyCooking:PropTypes.func
+  handleCurrentlyCooking: PropTypes.func,
+  countCaloriesTime: PropTypes.func,
 };
 
 export default Cooking;
