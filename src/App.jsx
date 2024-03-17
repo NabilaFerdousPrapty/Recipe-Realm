@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Recipes from "./components/Recipes/Recipes";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   let [totalTime, setTotalTime] = useState(0);
@@ -54,7 +55,7 @@ function App() {
   const notify = () => toast.warning("Recipe already exists in the list!");
 
   return (
-    <>
+    < >
       <Header />
       <div className="mt-8 my-4">
         <h1 className="lg:text-4xl text-xl lexend-semi-bold text-[#150B2B]">
@@ -81,6 +82,7 @@ function App() {
         />
       </div>
       <ToastContainer />
+      <Footer ></Footer>
     </>
   );
 }
