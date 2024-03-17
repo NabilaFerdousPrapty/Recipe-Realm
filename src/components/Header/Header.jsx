@@ -80,16 +80,16 @@ const Header = () => {
         </div>
       </div>
 
-      <div style={{ backgroundImage: `url(${bgImage})` }} className='bg-cover rounded-xl'>
+      <div style={{ backgroundImage: `url(${bgImage})` }} className='bg-cover rounded-xl bg-center bg-no-repeat bg-gradient-to-b from-[#150B2BE5] to-[#150B2B00] '>
         <div className='text-white lg:py-12'>
           <h1 className="lg:text-5xl md:text-2xl text-xl lexend-bold py-8 pt-20 ">
           Embark on a Culinary Adventure <br /> with Our Cooking Classes!
           </h1>
-          <p className="lg:text-lg text-sm lexend-normal py-4">
+          <p className="lg:text-lg text-sm lexend-normal py-4 px-1">
           Join us in mastering the art of cooking! Whether you&apos;re a novice or a seasoned chef, our expertly crafted <br /> cooking classes offer something for everyone. Get ready to unleash your inner chef and impress <br /> your friends and family with delicious meals!
           </p>
           <div className='lg:py-10 pb-20  flex-col '>
-          <button className="btn px-8 bg-[#0BE58A] lexend-semi-bold rounded-3xl text-[#150B2B lg:mx-8 my-5">Explore Now</button>
+          <button className="btn px-8 bg-[#0BE58A] lexend-semi-bold rounded-3xl text-[#150B2B lg:mx-8 my-5 mx-2">Explore Now</button>
           <button className="btn bg-transparent text-white rounded-3xl lexend-semi-bold">Our Feedback</button>
           </div>
          
