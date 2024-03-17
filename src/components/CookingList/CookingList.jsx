@@ -7,7 +7,7 @@ const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,
   
   
   return (
-    <div className="md:w-1/3 border-2 border-[#28282833] rounded-3xl pt-8">
+    <div className="lg:w-1/3 border-2 border-[#28282833] rounded-3xl pt-8">
      <div>
      <h2 className="text-center text-3xl lexend-semi-bold pb-4 border-b-2 border-[#28282826] mx-8">
         Want to cook:{cookingList.length}
@@ -39,7 +39,7 @@ const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,
       ))}
       {}
      </div>
-     <div className=" mt-8 border-b-2 border-[#28282826] mx-6">
+     <div className=" mt-8 border-b-2 border-[#28282826] lg:mx-6">
       <CurrentlyCookingList handleCurrentlyCooking={handleCurrentlyCooking}  totalTime={totalTime} totalCalory={totalCalory} currentlyCookingList={currentlyCookingList} ></CurrentlyCookingList>
 
      </div>

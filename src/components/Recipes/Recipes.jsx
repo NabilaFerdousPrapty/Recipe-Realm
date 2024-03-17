@@ -12,7 +12,7 @@ const Recipes = ({handleSetCooking}) => {
     },[])
     return (
         <>
-        <div className="md:w-2/3 grid md:grid-cols-2 grid-cols-1 md:gap-4">
+        <div className="lg:w-2/3 grid md:grid-cols-2 grid-cols-1 md:gap-4">
            
             {
                 recipes.map((recipe,index)=><Recipe recipe={recipe} key={index}    handleSetCooking={(recipe, time, calories) =>

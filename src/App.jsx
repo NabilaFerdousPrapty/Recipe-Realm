@@ -60,7 +60,7 @@ function App() {
         <h1 className="lg:text-4xl text-xl lexend-semi-bold text-[#150B2B]">
           Our Recipes
         </h1>
-        <p className="text-[#150B2B99] my-4">
+        <p className="text-[#150B2B99] md:my-4">
           Welcome to our collection of delicious recipes! Whether you&apos;re a
           seasoned chef or just starting out in the kitchen, <br /> you&apos;ll
           find something here to tantalize your taste buds. From mouthwatering
@@ -69,7 +69,7 @@ function App() {
           techniques along the way.
         </p>
       </div>
-      <div className="md:flex justify-between gap-8">
+      <div className="lg:flex justify-between lg:gap-8">
         <Recipes handleSetCooking={handleSetCooking} />
         <CookingList
           cookingList={cookingList}
