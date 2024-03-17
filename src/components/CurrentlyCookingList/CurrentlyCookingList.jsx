@@ -10,8 +10,8 @@ const CurrentlyCookingList = ({
         <h2 className="text-3xl lexend-semi-bold border-b-2 border-[#28282826]">
           Currently cooking:{currentlyCookingList.length}
         </h2>
-        <table className="table text-xs">
-          <thead>
+        <table className="table text-xs w-auto">
+          <thead className="">
             <tr>
               <th className="">No</th>
               <th className="">Name</th>
@@ -19,7 +19,7 @@ const CurrentlyCookingList = ({
               <th className="">Calories</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="bg-[#2828281a] rounded-3xl" >
             {currentlyCookingList.map((item, index) => (
               <tr key={index}>
                 <td>{index + 1}</td>

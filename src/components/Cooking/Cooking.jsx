@@ -9,10 +9,10 @@ const Cooking = ({
   return (
     <div>
       <div className="overflow-x-auto">
-        <table className="table text-xs">
+        <table className="table text-xs ">
           <tbody>
             {
-              <tr className="hover">
+              <tr className="hover bg-[#2828281a] rounded-3xl">
                 <th className="text-xs ">{index + 1}</th>
                 <td className="text-xs ">{recipe_name}</td>
                 <td className="text-xs ">{preparing_time}</td>
