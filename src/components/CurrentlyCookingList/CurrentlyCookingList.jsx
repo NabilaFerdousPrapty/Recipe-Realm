@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+
 const CurrentlyCookingList = ({
   totalTime,
   totalCalory,
@@ -10,7 +11,8 @@ const CurrentlyCookingList = ({
         <h2 className="text-3xl lexend-semi-bold border-b-2 border-[#28282826]">
           Currently cooking:{currentlyCookingList.length}
         </h2>
-        <table className="table text-xs w-auto">
+       <div className="overflow-x-auto">
+       <table className="table text-xs">
           <thead className="">
             <tr>
               <th className="">No</th>
@@ -30,6 +32,7 @@ const CurrentlyCookingList = ({
             ))}
           </tbody>
         </table>
+       </div>
       </div>
       <div className="flex justify-end items-center mt-6 gap-4">
         <h2>

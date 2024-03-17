@@ -13,7 +13,7 @@ const CookingList = ({ cookingList,totalTime,totalCalory,handleCurrentlyCooking,
         Want to cook:{cookingList.length}
       </h2>
       <div className="overflow-x-auto">
-  <table className="table text-xs px-0">
+  <table className="table text-xs">
     <thead>
       <tr>
         <th className="">No</th>
