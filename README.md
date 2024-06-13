@@ -9,7 +9,9 @@ Currently, two official plugins are available:
 
 # Recipe App
 
-Welcome to the Recipe App! This app allows users to explore delicious recipes, mark their favorite ones, and track their cooking progress. Let's dive into the details:
+Welcome to the Recipe App! named Recipe Realm This app allows users to explore delicious recipes, mark their favorite ones, and track their cooking progress. Let's dive into the details:
+## live link
+netlify live link:https://chefreciperealm-using-react.netlify.app/
 
 ## Features
 
@@ -40,7 +42,8 @@ Welcome to the Recipe App! This app allows users to explore delicious recipes, m
 
 3. Start the development server:
 
-npm start
+npm run dev
+4. Open localhost
 
 ## Contributing
 Contributions are welcome! If you find any issues or have suggestions, feel free to open an issue or submit a pull request.
